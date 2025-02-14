@@ -10,7 +10,7 @@ GitHub, Git, Jupyter, pandas, Seaborn and other popular data analytics tools.
 
 - GitHub Repository:  **datafun-06-eda**
 - Documentation:      README.md
-- Notebook:           **yourname_eda.ipynb**
+- Notebook:           **scottwal_eda.ipynb**
 
 ## Start a New Project
 
@@ -114,7 +114,7 @@ Jupyter Notebook / Python cell example:
 
 ```python
 # Load the dataset into a pandas DataFrame - adjust this process for your custom data
-df = sns.load_dataset('iris')
+df = sns.load_dataset('dots')
 
 # Inspect first rows of the DataFrame
 print(df.head())
@@ -151,7 +151,7 @@ Jupyter Notebook / Python cell example:
 
 ```python
 # Inspect histogram by numerical column
-df['sepal_length'].hist()
+df['firing_rate'].hist()
 
 # Inspect histograms for all numerical columns
 df.hist()
@@ -170,7 +170,7 @@ Jupyter Notebook / Python cell example:
 
 ```python
 # Inspect value counts by categorical column
-df['species'].value_counts()
+df['choice'].value_counts()
 
 # Inspect value counts for all categorical columns
 for col in df.select_dtypes(include=['object', 'category']).columns:
